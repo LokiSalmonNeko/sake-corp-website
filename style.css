@@ -486,6 +486,18 @@ img {
     .donate-inner {
         grid-template-columns: 1fr;
         gap: 1.75rem;
+        text-align: center;
+    }
+
+    .donate-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donate-badge {
+        align-items: center;
+        text-align: center;
     }
 
     .donate-badge iframe {
@@ -558,6 +570,22 @@ img {
    響應式設計 Responsive
 ============================================= */
 @media (max-width: 640px) {
+    /* Navbar / Language Selector */
+    .site-nav {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        gap: 0.2rem;
+    }
+    
+    .nav-lang-link {
+        font-size: 0.72rem;
+        padding: 0.15rem 0.2rem;
+    }
+    
+    .nav-divider {
+        margin: 0;
+    }
+
     .hero-section {
         padding: 3rem 0 2.5rem;
     }
@@ -566,8 +594,50 @@ img {
         padding: 3rem 0;
     }
 
+    /* Center section labels on mobile */
+    .section-label {
+        display: block;
+        width: max-content;
+        margin: 0 auto 2.5rem;
+    }
+
+    /* Force the About section grid to stack vertically on mobile */
+    #about-heading + .ts-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem;
+    }
+    #about-heading + .ts-grid > .column {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+    }
+
+    /* Make About Us cards side-by-side on mobile */
+    #about-heading + .ts-grid > .column:nth-child(2) {
+        display: flex;
+        gap: 1rem;
+    }
+    #about-heading + .ts-grid > .column:nth-child(2) .ts-space {
+        display: none;
+    }
+    #about-heading + .ts-grid > .column:nth-child(2) .ts-box {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .card-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Center align service cards */
+    .service-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .org-grid {
@@ -576,25 +646,38 @@ img {
 
     .footer-inner {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-links {
         flex-wrap: wrap;
         gap: 1rem;
+        justify-content: center;
     }
 
     .news-item {
         flex-direction: column;
         gap: 0.5rem;
+        align-items: center;
+        text-align: center;
     }
 
     .news-meta {
         flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Center the company info table block but keep text left aligned */
+    .company-info-table {
+        width: max-content;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .company-info-table th {
-        width: 100px;
+        width: auto;
+        min-width: 80px;
         padding-right: 1rem;
     }
 
