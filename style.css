@@ -1,0 +1,616 @@
+/* =============================================
+   全域設定 Global Settings
+============================================= */
+:root {
+    --bg-color: #fafafa;
+    --text-primary: #121212;
+    --text-secondary: #4b5563;
+    --text-muted: #9ca3af;
+    --border-color: #e5e7eb;
+    --card-hover-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans JP', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =============================================
+   版面容器 Page Container
+============================================= */
+.page-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* =============================================
+   導航列 Navigation Bar
+============================================= */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(250, 250, 250, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.site-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.site-logo {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.site-logo-img {
+    height: 28px;
+    width: auto;
+    display: block;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.nav-lang-link {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-lang-link:hover {
+    color: var(--text-primary);
+    background-color: var(--border-color);
+}
+
+.nav-lang-link.is-active {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.nav-divider {
+    color: var(--border-color);
+    font-size: 0.75rem;
+    user-select: none;
+}
+
+/* =============================================
+   頁首英雄區塊 Hero Section
+============================================= */
+.hero-section {
+    padding: 5rem 0 4rem;
+}
+
+.hero-subtitle {
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin: 0 0 1.5rem;
+}
+
+.hero-tagline {
+    font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+    font-weight: 400;
+    color: var(--text-secondary);
+    max-width: 540px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =============================================
+   區塊標題 Section Title (黑底白字膠囊)
+============================================= */
+.section-wrap {
+    padding: 4rem 0;
+}
+
+.section-label {
+    display: inline-block;
+    background-color: var(--text-primary);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.4rem 1.75rem;
+    border-radius: 4px;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.02em;
+}
+
+/* =============================================
+   卡片通用 Card Base
+============================================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+}
+
+/* =============================================
+   服務卡片 Service Cards
+============================================= */
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.service-card-icon {
+    width: 42px;
+    height: 42px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.service-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.6rem;
+}
+
+.service-card-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* =============================================
+   關聯組織卡片 Organization Cards
+============================================= */
+.org-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.org-card {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 160px;
+}
+
+.org-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+}
+
+.org-logo {
+    max-height: 56px;
+    max-width: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.org-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.02em;
+}
+
+/* =============================================
+   公告 / 最新消息 Announcements
+============================================= */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+}
+
+.news-item:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.news-item:hover {
+    opacity: 0.7;
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding-top: 0.1rem;
+    min-width: 95px;
+    font-variant-numeric: tabular-nums;
+}
+
+.news-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 100px;
+    padding: 0.1rem 0.6rem;
+    white-space: nowrap;
+}
+
+.news-title {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.55;
+}
+
+.news-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+}
+
+/* 查看全部連結 */
+.news-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.news-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-primary);
+    padding-bottom: 1px;
+    transition: opacity 0.2s ease;
+}
+
+.news-all-link:hover {
+    opacity: 0.6;
+}
+
+.news-all-link-arrow {
+    font-size: 0.8rem;
+    transition: transform 0.2s ease;
+}
+
+.news-all-link:hover .news-all-link-arrow {
+    transform: translateX(3px);
+}
+
+/* =============================================
+   公司概要 Company Overview
+============================================= */
+.company-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.company-info-table tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.company-info-table tr:first-child {
+    border-top: 1px solid var(--border-color);
+}
+
+.company-info-table th {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-align: left;
+    padding: 1rem 1.5rem 1rem 0;
+    white-space: nowrap;
+    vertical-align: top;
+    width: 130px;
+}
+
+.company-info-table td {
+    font-size: 0.97rem;
+    color: var(--text-secondary);
+    padding: 1rem 0;
+    line-height: 1.65;
+    vertical-align: top;
+}
+
+.company-info-table td a {
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
+    transition: border-color 0.2s ease;
+}
+
+.company-info-table td a:hover {
+    border-color: var(--text-primary);
+}
+
+
+
+/* =============================================
+   贊助我們 Donate Section
+============================================= */
+.donate-inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+}
+
+.donate-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 0.75rem;
+    line-height: 1.4;
+}
+
+.donate-desc {
+    font-size: 0.97rem;
+    color: var(--text-secondary);
+    line-height: 1.75;
+    margin: 0 0 1.5rem;
+    max-width: 480px;
+}
+
+.donate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #F28500;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.45rem 1.1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    letter-spacing: 0.01em;
+}
+
+.donate-btn:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+.donate-btn-arrow {
+    transition: transform 0.2s ease;
+}
+
+.donate-btn:hover .donate-btn-arrow {
+    transform: translateX(3px);
+}
+
+.donate-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    flex-shrink: 0;
+}
+
+.donate-badge-note {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.5;
+    max-width: 380px;
+}
+
+@media (max-width: 700px) {
+    .donate-inner {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .donate-badge iframe {
+        max-width: 100%;
+        width: 100% !important;
+    }
+}
+
+/* =============================================
+   頁腳 Footer
+============================================= */
+.site-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 2.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-logo {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.footer-logo span {
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-left: 0.4rem;
+}
+
+.footer-copy {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-primary);
+    text-decoration: underline;
+}
+
+/* =============================================
+   分隔線 Dividers
+============================================= */
+.section-divider {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 0;
+}
+
+/* =============================================
+   響應式設計 Responsive
+============================================= */
+@media (max-width: 640px) {
+    .hero-section {
+        padding: 3rem 0 2.5rem;
+    }
+
+    .section-wrap {
+        padding: 3rem 0;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .org-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .news-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .news-meta {
+        flex-direction: row;
+    }
+
+    .company-info-table th {
+        width: 100px;
+        padding-right: 1rem;
+    }
+
+    .blog-post-title {
+        font-size: 1.05rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 769px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

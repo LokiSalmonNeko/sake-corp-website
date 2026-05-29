@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>石桂商社 | SAKE CORP.</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png"
+        href="https://img.uwub.tw/%E7%9F%B3%E6%A1%82%E5%95%86%E7%A4%BE%EF%BC%BFlogo%EF%BC%BF%E6%AD%A3.png">
+    <link rel="apple-touch-icon"
+        href="https://img.uwub.tw/%E7%9F%B3%E6%A1%82%E5%95%86%E7%A4%BE%EF%BC%BFlogo%EF%BC%BF%E6%AD%A3.png">
+
+    <!-- Open Graph / 社交媒體分享 -->
+    <meta property="og:title" content="石桂商社 | SAKE CORP." />
+    <meta property="og:description" content="石桂商社：致力於嘗試各種可能" />
+    <meta property="og:image"
+        content="https://img.uwub.tw/%E7%9F%B3%E6%A1%82%E5%95%86%E7%A4%BE%EF%BC%BFlogo%EF%BC%BF%E6%AD%A3.png" />
+    <meta property="og:url" content="https://sake-corp.com" />
+    <meta property="og:type" content="website" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="石桂商社 | SAKE CORP." />
+    <meta property="twitter:description" content="石桂商社：致力於嘗試各種可能" />
+    <meta property="twitter:image"
+        content="https://img.uwub.tw/%E7%9F%B3%E6%A1%82%E5%95%86%E7%A4%BE%EF%BC%BFlogo%EF%BC%BF%E6%AD%A3.png" />
+
+    <!-- 核心：Tocas UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/5.0.2/tocas.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocas-ui/5.0.2/tocas.min.js"></script>
+
+    <!-- 字體：Noto Sans, Noto Sans TC, Noto Sans JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- 自訂樣式 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =============================================
+         導航列 Navigation Bar
+    ============================================= -->
+    <header class="site-header" id="top">
+        <div class="page-container">
+            <div class="site-header-inner">
+                <a href="index.html" class="site-logo" id="site-logo">
+                    <img src="https://img.uwub.tw/%E7%9F%B3%E6%A1%82%E5%95%86%E7%A4%BER.png" alt="石桂商社 SAKE CORP."
+                        class="site-logo-img">
+                </a>
+                <nav class="site-nav" aria-label="語言切換">
+                    <a href="#" class="nav-lang-link is-active" id="lang-zh" aria-current="page">繁體中文</a>
+                    <span class="nav-divider" aria-hidden="true">/</span>
+                    <a href="#" class="nav-lang-link" id="lang-en">English</a>
+                    <span class="nav-divider" aria-hidden="true">/</span>
+                    <a href="#" class="nav-lang-link" id="lang-jp">日本語</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- =============================================
+         英雄區塊 Hero Section
+    ============================================= -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+        <div class="page-container">
+            <p class="hero-subtitle">Est. since always</p>
+            <h1 class="hero-title" id="hero-heading">SAKE CORP.</h1>
+            <p class="hero-tagline" data-i18n="hero-tagline">石桂商社：致力於嘗試各種可能。</p>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- =============================================
+         關於我們 About Section
+    ============================================= -->
+    <section class="section-wrap" aria-labelledby="about-heading">
+        <div class="page-container">
+            <span class="section-label" id="about-heading" data-i18n="about-heading">關於我們</span>
+
+            <div class="ts-grid is-2-columns is-relaxed">
+                <div class="column">
+                    <div class="ts-header is-large is-heavy" style="margin-bottom:1rem; line-height:1.4;" data-i18n="about-title">
+                        致力於嘗試各種可能
+                    </div>
+                    <p style="color: var(--text-secondary); line-height: 1.75; margin: 0 0 1rem; font-size: 1rem;" data-i18n="about-p1">
+                        石桂商社是一家致力於探索多元可能性的企業，從技術開發到創意服務，我們持續挑戰界限，追求卓越。
+                    </p>
+                    <p style="color: var(--text-secondary); line-height: 1.75; margin: 0; font-size: 1rem;" data-i18n="about-p2">
+                        我們相信，每一次嘗試都是一次成長的機會。無論是開發新產品、建立新合作，還是探索新市場，石桂商社始終保持開放的心態面對每一個挑戰。
+                    </p>
+                </div>
+                <div class="column">
+                    <div class="ts-box" style="background:#fff; border-color: var(--border-color);">
+                        <div class="ts-content">
+                            <div class="ts-statistic">
+                                <div class="value"
+                                    style="font-size: 2.5rem; font-weight: 900; color: var(--text-primary);">∞</div>
+                            </div>
+                            <div class="ts-meta"
+                                style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.9rem;" data-i18n="about-infinity">無限可能</div>
+                        </div>
+                    </div>
+                    <div class="ts-space"></div>
+                    <div class="ts-box" style="background:#fff; border-color: var(--border-color);">
+                        <div class="ts-content is-dense">
+                            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.4rem;" data-i18n="about-core">核心理念</div>
+                            <div class="ts-wrap is-compact">
+                                <span class="ts-badge is-secondary" data-i18n="badge-innovate">創新</span>
+                                <span class="ts-badge is-secondary" data-i18n="badge-explore">探索</span>
+                                <span class="ts-badge is-secondary" data-i18n="badge-collab">合作</span>
+                                <span class="ts-badge is-secondary" data-i18n="badge-grow">成長</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- =============================================
+         服務項目 Services Section
+    ============================================= -->
+    <section class="section-wrap" aria-labelledby="services-heading">
+        <div class="page-container">
+            <span class="section-label" id="services-heading" data-i18n="services-heading">服務項目</span>
+
+            <div class="card-grid">
+
+                <!-- 服務 1：技術開發 -->
+                <div class="service-card" id="service-tech">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <span class="ts-icon is-code-icon"></span>
+                    </div>
+                    <h2 class="service-card-title" data-i18n="service-tech">技術開發</h2>
+                    <p class="service-card-desc" data-i18n="service-tech-desc">
+                        從網頁前後端開發到行動應用程式，提供全方位的軟體開發解決方案，協助客戶實現數位轉型。
+                    </p>
+                </div>
+
+                <!-- 服務 2：創意設計 -->
+                <div class="service-card" id="service-design">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <span class="ts-icon is-paintbrush-icon"></span>
+                    </div>
+                    <h2 class="service-card-title" data-i18n="service-design">創意設計</h2>
+                    <p class="service-card-desc" data-i18n="service-design-desc">
+                        品牌識別設計、使用者介面設計與視覺傳達，打造令人印象深刻的視覺體驗。
+                    </p>
+                </div>
+
+                <!-- 服務 3：顧問諮詢 -->
+                <div class="service-card" id="service-consulting">
+                    <div class="service-card-icon" aria-hidden="true">
+                        <span class="ts-icon is-comments-icon"></span>
+                    </div>
+                    <h2 class="service-card-title" data-i18n="service-consult">顧問諮詢</h2>
+                    <p class="service-card-desc" data-i18n="service-consult-desc">
+                        提供商業策略、市場分析與技術規劃顧問服務，協助企業制定最佳發展方向。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- =============================================
+         關聯組織 Related Organizations
+    ============================================= -->
+    <section class="section-wrap" aria-labelledby="org-heading">
+        <div class="page-container">
+            <span class="section-label" id="org-heading" data-i18n="org-heading">關聯組織</span>
+
+            <div class="org-grid">
+
+                <!-- 鮭貓工作室 -->
+                <a href="https://salmon4neko.com/" target="_blank" rel="noopener noreferrer" class="org-card"
+                    id="org-salmon" aria-label="鮭貓工作室">
+                    <img src="https://img.uwub.tw/Salmon4neko%20Studio_%E6%A8%99%E6%BA%96%E5%AD%97.png" alt="鮭貓工作室"
+                        class="org-logo">
+                    <span class="org-name" data-i18n="org-salmon">鮭貓工作室</span>
+                </a>
+
+                <!-- 華人新觀點 -->
+                <a href="https://cnp.tw/" target="_blank" rel="noopener noreferrer" class="org-card"
+                    id="org-chinese-view" aria-label="華人新觀點">
+                    <img src="https://img.uwub.tw/%E8%8F%AF%E4%BA%BA%E6%96%B0%E8%A7%80%E9%BB%9Elogo.png" alt="華人新觀點"
+                        class="org-logo">
+                    <span class="org-name" data-i18n="org-cnp">華人新觀點</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- =============================================
+         最新消息 News / Announcements
+    ============================================= -->
+    <section class="section-wrap" aria-labelledby="news-heading">
+        <div class="page-container">
+            <span class="section-label" id="news-heading" data-i18n="news-heading">最新消息</span>
+
+            <!-- 首頁最多顯示最新 3 則，與 news.html 保持同步 -->
+            <nav class="news-list" aria-label="最新消息列表">
+
+                <a href="#" class="news-item" id="news-preview-1">
+                    <div class="news-meta">
+                        <span class="news-date">2025.05.30</span>
+                        <span class="news-tag" data-i18n="news-tag-1">公告</span>
+                    </div>
+                    <div class="news-title" data-i18n="news-title-1">石桂商社官網完成全新改版，採用 Tocas UI 重新設計。</div>
+                </a>
+
+                <a href="#" class="news-item" id="news-preview-2">
+                    <div class="news-meta">
+                        <span class="news-date">2025.05.26</span>
+                        <span class="news-tag" data-i18n="news-tag-2">公告</span>
+                    </div>
+                    <div class="news-title" data-i18n="news-title-2">石桂商社正式於美國德拉瓦州完成公司登記，以 SAK3 Corporation 名義營運。</div>
+                </a>
+
+            </nav>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- =============================================
+         公司概要 Company Overview
+    ============================================= -->
+    <section class="section-wrap" aria-labelledby="company-heading">
+        <div class="page-container">
+            <span class="section-label" id="company-heading" data-i18n="company-heading">公司概要</span>
+
+            <table class="company-info-table" aria-label="公司基本資訊">
+                <tbody>
+                    <tr>
+                        <th scope="row" data-i18n="comp-name">公司名稱</th>
+                        <td>SAK3 Corporation</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="comp-phone">電話號碼</th>
+                        <td>
+                            <a href="tel:+18889670180">+1 (888) 967-0180</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="comp-addr">公司地址</th>
+                        <td data-i18n="comp-addr-val">2810 N Church St STE 88755<br>Wilmington, DE 19802, US</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="comp-date">註冊日期</th>
+                        <td>2026.05.26</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" data-i18n="comp-email">電子信箱</th>
+                        <td>
+                            <a href="mailto:hi@sake-corp.com">hi@sake-corp.com</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- =============================================
+         贊助我們 Donate Section
+    ============================================= -->
+    <section class="section-wrap" aria-labelledby="donate-heading">
+        <div class="page-container">
+            <span class="section-label" id="donate-heading" data-i18n="donate-heading">贊助我們</span>
+
+            <div class="donate-inner">
+                <div class="donate-text">
+                    <h2 class="donate-title" data-i18n="donate-title">支持石桂商社持續嘗試各種可能</h2>
+                    <p class="donate-desc" data-i18n="donate-desc">
+                        石桂商社的一切計畫都仰賴各方夥伴的支持。如果您認同我們的理念，歡迎透過以下方式贊助，讓我們能夠持續創作、探索與成長。
+                    </p>
+                    <a
+                        href="https://pay.sake-corp.com/b/8x28wP7exerE1SKgId1Fe00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="donate-btn"
+                        id="donate-btn">
+                        <span data-i18n="donate-btn">捐款給我們</span>
+                        <span class="donate-btn-arrow">→</span>
+                    </a>
+                </div>
+                <div class="donate-badge">
+                    <iframe
+                        width="380"
+                        height="38"
+                        style="border:0;"
+                        src="https://climate.stripe.com/badge/oppVX9?theme=light&size=small&locale=zh-Hans"
+                        title="Stripe Climate Badge"
+                        loading="lazy">
+                    </iframe>
+                    <p class="donate-badge-note" data-i18n="donate-note">我們承諾將部分收益捐助給 Stripe Climate 的碳清除計畫。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+         頁腳 Footer
+    ============================================= -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="page-container">
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-logo">
+                        石桂商社<span>SAKE CORP.</span>
+                    </div>
+                    <div class="footer-copy" style="margin-top: 0.4rem;" data-i18n="footer-copy">
+                        © 2026 石桂商社 SAKE CORP. All rights reserved.
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#donate-heading" class="footer-link" id="footer-donate" data-i18n="footer-donate">贊助我們</a>
+                    <a href="#company-heading" class="footer-link" id="footer-company" data-i18n="footer-company">公司概要</a>
+                    <a href="#news-heading" class="footer-link" id="footer-news" data-i18n="footer-news">最新消息</a>
+                    <a href="#org-heading" class="footer-link" id="footer-org" data-i18n="footer-org">關聯組織</a>
+                    <a href="#services-heading" class="footer-link" id="footer-services" data-i18n="footer-services">服務項目</a>
+                    <a href="#about-heading" class="footer-link" id="footer-about" data-i18n="footer-about">關於我們</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============================================
+         語言切換邏輯 Language Switcher Logic
+    ============================================= -->
+    <script>
+        const translations = {
+            'zh': {
+                'hero-tagline': '石桂商社：致力於嘗試各種可能。',
+                'about-heading': '關於我們',
+                'about-title': '致力於嘗試各種可能',
+                'about-p1': '石桂商社是一家致力於探索多元可能性的企業，從技術開發到創意服務，我們持續挑戰界限，追求卓越。',
+                'about-p2': '我們相信，每一次嘗試都是一次成長的機會。無論是開發新產品、建立新合作，還是探索新市場，石桂商社始終保持開放的心態面對每一個挑戰。',
+                'about-infinity': '無限可能',
+                'about-core': '核心理念',
+                'badge-innovate': '創新',
+                'badge-explore': '探索',
+                'badge-collab': '合作',
+                'badge-grow': '成長',
+                'services-heading': '服務項目',
+                'service-tech': '技術開發',
+                'service-tech-desc': '從網頁前後端開發到行動應用程式，提供全方位的軟體開發解決方案，協助客戶實現數位轉型。',
+                'service-design': '創意設計',
+                'service-design-desc': '品牌識別設計、使用者介面設計與視覺傳達，打造令人印象深刻的視覺體驗。',
+                'service-consult': '顧問諮詢',
+                'service-consult-desc': '提供商業策略、市場分析與技術規劃顧問服務，協助企業制定最佳發展方向。',
+                'org-heading': '關聯組織',
+                'org-salmon': '鮭貓工作室',
+                'org-cnp': '華人新觀點',
+                'news-heading': '最新消息',
+                'news-tag-1': '公告',
+                'news-tag-2': '公告',
+                'news-title-1': '石桂商社官網完成全新改版，採用 Tocas UI 重新設計。',
+                'news-title-2': '石桂商社正式於美國德拉瓦州完成公司登記，以 SAK3 Corporation 名義營運。',
+                'company-heading': '公司概要',
+                'comp-name': '公司名稱',
+                'comp-phone': '電話號碼',
+                'comp-addr': '公司地址',
+                'comp-addr-val': '2810 N Church St STE 88755<br>Wilmington, DE 19802, US',
+                'comp-date': '註冊日期',
+                'comp-email': '電子信箱',
+                'donate-heading': '贊助我們',
+                'donate-title': '支持石桂商社持續嘗試各種可能',
+                'donate-desc': '石桂商社的一切計畫都仰賴各方夥伴的支持。如果您認同我們的理念，歡迎透過以下方式贊助，讓我們能夠持續創作、探索與成長。',
+                'donate-btn': '捐款給我們',
+                'donate-note': '我們承諾將部分收益捐助給 Stripe Climate 的碳清除計畫。',
+                'footer-donate': '贊助我們',
+                'footer-company': '公司概要',
+                'footer-news': '最新消息',
+                'footer-org': '關聯組織',
+                'footer-services': '服務項目',
+                'footer-about': '關於我們',
+                'footer-copy': '© 2026 石桂商社 SAKE CORP. All rights reserved.'
+            },
+            'en': {
+                'hero-tagline': 'Sake Corp.: Dedicated to exploring all possibilities.',
+                'about-heading': 'About Us',
+                'about-title': 'Dedicated to Exploring All Possibilities',
+                'about-p1': 'Sake Corp. is an enterprise dedicated to exploring diverse possibilities. From technological development to creative services, we continuously challenge boundaries and pursue excellence.',
+                'about-p2': 'We believe that every attempt is an opportunity for growth. Whether developing new products, building new partnerships, or exploring new markets, Sake Corp. always faces every challenge with an open mind.',
+                'about-infinity': 'Infinite Possibilities',
+                'about-core': 'Core Values',
+                'badge-innovate': 'Innovation',
+                'badge-explore': 'Exploration',
+                'badge-collab': 'Collaboration',
+                'badge-grow': 'Growth',
+                'services-heading': 'Services',
+                'service-tech': 'Tech Development',
+                'service-tech-desc': 'From frontend/backend web development to mobile applications, we provide comprehensive software development solutions to help clients achieve digital transformation.',
+                'service-design': 'Creative Design',
+                'service-design-desc': 'Brand identity design, user interface design, and visual communication, creating impressive visual experiences.',
+                'service-consult': 'Consulting',
+                'service-consult-desc': 'Providing business strategy, market analysis, and technology planning consulting services to help enterprises chart their optimal course for development.',
+                'org-heading': 'Affiliated Organizations',
+                'org-salmon': 'Salmon4neko Studio',
+                'org-cnp': 'Chinese New Perspective',
+                'news-heading': 'News',
+                'news-tag-1': 'Announcement',
+                'news-tag-2': 'Announcement',
+                'news-title-1': 'Sake Corp. website has been completely revamped, redesigned using Tocas UI.',
+                'news-title-2': 'Sake Corp. has officially completed company registration in Delaware, USA, operating under the name SAK3 Corporation.',
+                'company-heading': 'Company Overview',
+                'comp-name': 'Company Name',
+                'comp-phone': 'Phone Number',
+                'comp-addr': 'Company Address',
+                'comp-addr-val': '2810 N Church St STE 88755<br>Wilmington, DE 19802, US',
+                'comp-date': 'Registration Date',
+                'comp-email': 'Email',
+                'donate-heading': 'Donate',
+                'donate-title': 'Support Sake Corp. in exploring all possibilities',
+                'donate-desc': 'All projects at Sake Corp. rely on the support of our partners. If you agree with our vision, please consider supporting us through the following methods, enabling us to continue creating, exploring, and growing.',
+                'donate-btn': 'Donate Now',
+                'donate-note': 'We are committed to donating a portion of our revenue to Stripe Climate\'s carbon removal initiatives.',
+                'footer-donate': 'Donate',
+                'footer-company': 'Company Overview',
+                'footer-news': 'News',
+                'footer-org': 'Affiliated Organizations',
+                'footer-services': 'Services',
+                'footer-about': 'About Us',
+                'footer-copy': '© 2026 Sake Corp. All rights reserved.'
+            },
+            'jp': {
+                'hero-tagline': '石桂商社：あらゆる可能性を探求し続けます。',
+                'about-heading': '私たちについて',
+                'about-title': 'あらゆる可能性の探求へ',
+                'about-p1': '石桂商社は多様な可能性を探求する企業です。技術開発からクリエイティブサービスまで、私たちは常に限界に挑戦し、卓越性を追求しています。',
+                'about-p2': 'すべての試みが成長の機会であると私たちは信じています。新製品の開発、新たなパートナーシップの構築、新市場の開拓など、石桂商社は常に開かれた心で挑戦に向き合います。',
+                'about-infinity': '無限の可能性',
+                'about-core': 'コアバリュー',
+                'badge-innovate': 'イノベーション',
+                'badge-explore': '探求',
+                'badge-collab': '協力',
+                'badge-grow': '成長',
+                'services-heading': 'サービス',
+                'service-tech': '技術開発',
+                'service-tech-desc': 'Webのフロント・バックエンド開発からモバイルアプリまで、包括的なソフトウェア開発ソリューションを提供し、顧客のDXを支援します。',
+                'service-design': 'デザイン',
+                'service-design-desc': 'ブランドアイデンティティ、UIデザイン、視覚伝達を通じて、印象的なビジュアル体験を創出します。',
+                'service-consult': 'コンサルティング',
+                'service-consult-desc': 'ビジネス戦略、市場分析、技術計画のコンサルティングサービスを提供し、企業の最適な発展方向の策定を支援します。',
+                'org-heading': '関連組織',
+                'org-salmon': '鮭猫スタジオ',
+                'org-cnp': '華人新観点',
+                'news-heading': '最新情報',
+                'news-tag-1': 'お知らせ',
+                'news-tag-2': 'お知らせ',
+                'news-title-1': '石桂商社公式サイトをTocas UIを用いて全面的にリニューアルしました。',
+                'news-title-2': '石桂商社は米国デラウェア州にて法人登記を完了し、SAK3 Corporationとして事業を開始しました。',
+                'company-heading': '会社概要',
+                'comp-name': '会社名',
+                'comp-phone': '電話番号',
+                'comp-addr': '所在地',
+                'comp-addr-val': '2810 N Church St STE 88755<br>Wilmington, DE 19802, US',
+                'comp-date': '設立日',
+                'comp-email': 'メールアドレス',
+                'donate-heading': '寄付・支援',
+                'donate-title': '石桂商社の可能性の探求を支援する',
+                'donate-desc': '石桂商社のプロジェクトは皆様のご支援によって成り立っています。私たちの理念に共感いただける方は、以下の方法でのご支援をお願いいたします。',
+                'donate-btn': '寄付する',
+                'donate-note': '収益の一部をStripe Climateの炭素除去プロジェクトに寄付することをお約束します。',
+                'footer-donate': '寄付・支援',
+                'footer-company': '会社概要',
+                'footer-news': '最新情報',
+                'footer-org': '関連組織',
+                'footer-services': 'サービス',
+                'footer-about': '私たちについて',
+                'footer-copy': '© 2026 石桂商社 SAKE CORP. All rights reserved.'
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const langLinks = document.querySelectorAll('.nav-lang-link');
+            const i18nElements = document.querySelectorAll('[data-i18n]');
+
+            const setLanguage = (lang) => {
+                // Update html lang attribute
+                const htmlLang = lang === 'zh' ? 'zh-tw' : (lang === 'en' ? 'en' : 'ja');
+                document.documentElement.lang = htmlLang;
+
+                // Update link active state
+                langLinks.forEach(link => {
+                    link.classList.remove('is-active');
+                    if (link.id === `lang-${lang}`) {
+                        link.classList.add('is-active');
+                    }
+                });
+
+                // Translate elements
+                i18nElements.forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (translations[lang] && translations[lang][key]) {
+                        el.innerHTML = translations[lang][key];
+                    }
+                });
+            };
+
+            langLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const lang = link.id.split('-')[1];
+                    setLanguage(lang);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
